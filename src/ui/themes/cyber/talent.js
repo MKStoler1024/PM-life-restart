@@ -52,6 +52,7 @@ export default class CyberTalent extends ui.view.CyberTheme.CyberTalentUI {
         const grade1 = grades.getChildByName("grade1");
         const grade2 = grades.getChildByName("grade2");
         const grade3 = grades.getChildByName("grade3");
+        const grade4 = grades.getChildByName("grade4");
         const labDescription = box.getChildByName("labDescription");
         const unselected = box.getChildByName("unselected");
         const selected = box.getChildByName("selected");
@@ -64,6 +65,7 @@ export default class CyberTalent extends ui.view.CyberTheme.CyberTalentUI {
                 grade1.visible = true;
                 grade2.visible = false;
                 grade3.visible = false;
+                grade4.visible = false;
                 break;
             case 2:
                 grades.x = 0;
@@ -71,6 +73,7 @@ export default class CyberTalent extends ui.view.CyberTheme.CyberTalentUI {
                 grade1.visible = false;
                 grade2.visible = true;
                 grade3.visible = false;
+                grade4.visible = false;
                 break;
             case 3:
                 grades.x = 0;
@@ -78,6 +81,15 @@ export default class CyberTalent extends ui.view.CyberTheme.CyberTalentUI {
                 grade1.visible = false;
                 grade2.visible = false;
                 grade3.visible = true;
+                grade4.visible = false;
+                break;
+            case 4:
+                grades.x = 0;
+                labTitle.x = 1;
+                grade1.visible = false;
+                grade2.visible = false;
+                grade3.visible = false;
+                grade4.visible = true;
                 break;
             default:
                 grades.x = 1;
@@ -85,6 +97,7 @@ export default class CyberTalent extends ui.view.CyberTheme.CyberTalentUI {
                 grade1.visible = false;
                 grade2.visible = false;
                 grade3.visible = false;
+                grade4.visible = false;
                 break;
         }
         labTitle.text = dataSource.name;

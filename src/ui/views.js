@@ -47,8 +47,8 @@ const cyber = {
                 hoverStroke: '#ffa500',
             },
             defaultFontColor: '#cccccc',
-            grade: ['#cccccc', '#55fffe', '#b17cff', '#ffce45'],
-            filter: ['#ccccccff', '#55fffeff', '#b17cffff', '#ffce45ff'],
+            grade: ['#cccccc', '#55fffe', '#b17cff', '#ffce45', '#a21818'],
+            filter: ['#ccccccff', '#55fffeff', '#b17cffff', '#ffce45ff', '#a21818ff'],
             gradeBlk: [
                 {
                     visible: false,
@@ -66,6 +66,11 @@ const cyber = {
                 {
                     defaultColor: '#ffce45',
                     hoverColor: '#ffce45',
+                    visible: true,
+                },
+                {
+                    defaultColor: '#a21818',
+                    hoverColor: '#a21818',
                     visible: true,
                 },
             ],
@@ -228,6 +233,10 @@ const dark = {
                         defaultColor: '#ffa07a',
                         hoverColor: '#f7a989',
                     },
+                    {
+                        defaultColor: '#a21818',
+                        hoverColor: '#d22e2e',
+                    },
                 ],
                 ageColor: '#ffffee',
                 contentColor: '#eeeeee',
@@ -238,8 +247,8 @@ const dark = {
                 hoverColor: '#ffc500',
                 hoverStroke: '#ffa500',
             },
-            grade: ['#cccccc', '#55fffe', '#b17cff', '#ffce45'],
-            filter: ['#ccccccff', '#55fffeff', '#b17cffff', '#ffce45ff'],
+            grade: ['#cccccc', '#55fffe', '#b17cff', '#ffce45', '#a21818'],
+            filter: ['#ccccccff', '#55fffeff', '#b17cffff', '#ffce45ff', '#a21818ff'],
             card: [
                 {
                     normal: {
@@ -329,6 +338,28 @@ const dark = {
                         radius: 4,
                     },
                 },
+                {
+                    normal: {
+                        defaultColor: '#a21818',
+                        defaultStroke: '#f8f8f8',
+                        defaultLabel: '#eeeeee',
+                        hoverColor: '#d22e2e',
+                        hoverStroke: '#f8f8f8',
+                        hoverLabel: '#3b3b3b',
+                        lineWidth: 4,
+                        radius: 4,
+                    },
+                    selected: {
+                        defaultColor: '#d22e2e',
+                        defaultStroke: '#f8f8f8',
+                        defaultLabel: '#3b3b3b',
+                        hoverColor: '#d22e2e',
+                        hoverStroke: '#f8f8f8',
+                        hoverLabel: '#3b3b3b',
+                        lineWidth: 4,
+                        radius: 4,
+                    },
+                },
             ],
             summary: [
                 {
@@ -371,6 +402,16 @@ const dark = {
                     lineWidth: 2,
                     radius: 0,
                 },
+                {
+                    defaultColor: '#a21818',
+                    defaultStroke: '#f8f8f8',
+                    defaultLabel: '#eeeeee',
+                    hoverColor: '#d22e2e',
+                    hoverStroke: '#f8f8f8',
+                    hoverLabel: '#3b3b3b',
+                    lineWidth: 2,
+                    radius: 0,
+                },
             ],
             achievement: [
                 {
@@ -408,6 +449,16 @@ const dark = {
                     defaultStroke: '#f8f8f8',
                     defaultLabel: '#eeeeee',
                     hoverColor: '#f7a989',
+                    hoverStroke: '#f8f8f8',
+                    hoverLabel: '#3b3b3b',
+                    lineWidth: 4,
+                    radius: 0,
+                },
+                {
+                    defaultColor: '#a21818',
+                    defaultStroke: '#f8f8f8',
+                    defaultLabel: '#eeeeee',
+                    hoverColor: '#d22e2e',
                     hoverStroke: '#f8f8f8',
                     hoverLabel: '#3b3b3b',
                     lineWidth: 4,
@@ -731,6 +782,10 @@ const light = {
                         defaultColor: '#f7a989',
                         hoverColor: '#ffa07a',
                     },
+                    {
+                        defaultColor: '#a21818',
+                        hoverColor: '#d22e2e',
+                    },
                 ],
                 ageColor: '#000000',
                 contentColor: '#000000',
@@ -741,8 +796,8 @@ const light = {
                 hoverColor: '#ffc500',
                 hoverStroke: '#ffa500',
             },
-            grade: ['#000000', '#55fffe', '#b17cff', '#ffce45'],
-            filter: ['#000000ff', '#55fffeff', '#b17cffff', '#ffce45ff'],
+            grade: ['#000000', '#55fffe', '#b17cff', '#ffce45', '#a21818'],
+            filter: ['#000000ff', '#55fffeff', '#b17cffff', '#ffce45ff', '#a21818ff'],
             card: [
                 {
                     normal: {
@@ -832,6 +887,28 @@ const light = {
                         radius: 4,
                     },
                 },
+                {
+                    normal: {
+                        defaultColor: '#a21818',
+                        defaultStroke: '#f8f8f8',
+                        defaultLabel: '#666666',
+                        hoverColor: '#d22e2e',
+                        hoverStroke: '#f8f8f8',
+                        hoverLabel: '#ffffff',
+                        lineWidth: 4,
+                        radius: 4,
+                    },
+                    selected: {
+                        defaultColor: '#d22e2e',
+                        defaultStroke: '#f8f8f8',
+                        defaultLabel: '#ffffff',
+                        hoverColor: '#d22e2e',
+                        hoverStroke: '#f8f8f8',
+                        hoverLabel: '#ffffff',
+                        lineWidth: 4,
+                        radius: 4,
+                    },
+                },
             ],
             summary: [
                 {
@@ -874,6 +951,16 @@ const light = {
                     lineWidth: 4,
                     radius: 4,
                 },
+                {
+                    defaultColor: '#a21818',
+                    defaultStroke: '#f8f8f8',
+                    defaultLabel: '#ffffff',
+                    hoverColor: '#d22e2e',
+                    hoverStroke: '#f8f8f8',
+                    hoverLabel: '#666666',
+                    lineWidth: 4,
+                    radius: 4,
+                },
             ],
             achievement: [
                 {
@@ -911,6 +998,16 @@ const light = {
                     defaultStroke: '#cccccc',
                     defaultLabel: '#eeeeee',
                     hoverColor: '#f7a989',
+                    hoverStroke: '#cccccc',
+                    hoverLabel: '#3b3b3b',
+                    lineWidth: 4,
+                    radius: 0,
+                },
+                {
+                    defaultColor: '#a21818',
+                    defaultStroke: '#cccccc',
+                    defaultLabel: '#eeeeee',
+                    hoverColor: '#d22e2e',
                     hoverStroke: '#cccccc',
                     hoverLabel: '#3b3b3b',
                     lineWidth: 4,

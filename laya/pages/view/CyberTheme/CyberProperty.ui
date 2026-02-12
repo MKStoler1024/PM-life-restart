@@ -1716,6 +1716,30 @@
                                         }]
                                 },
                                 {
+                                    "type":"Box",
+                                    "props":{"width":15,"name":"grade4","height":160},
+                                    "nodeParent":59,
+                                    "label":"Box(grade4)",
+                                    "isOpen":true,
+                                    "isDirectory":true,
+                                    "isAniNode":false,
+                                    "hasChild":true,
+                                    "compId":200,
+                                    "child":[
+                                        {
+                                            "type":"Rect",
+                                            "props":{"width":15,"lineWidth":1,"height":160,"fillColor":"#a21818"},
+                                            "nodeParent":200,
+                                            "label":"Rect",
+                                            "isDirectory":false,
+                                            "isAniNode":false,
+                                            "hasChild":false,
+                                            "compId":201,
+                                            "child":[
+                                                ]
+                                        }]
+                                },
+                                {
                                     "type":"Label",
                                     "props":{"text":"Title","name":"labTitle","left":52,"fontSize":55,"font":"方正像素12","color":"#ffffff","centerY":0},
                                     "nodeParent":59,

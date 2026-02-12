@@ -560,6 +560,43 @@
                                                                 }],
                                                             "$HIDDEN":false
                                                         }]
+                                                },
+                                                {
+                                                    "type":"Box",
+                                                    "props":{"width":15,"name":"grade4","height":58},
+                                                    "nodeParent":108,
+                                                    "label":"Box(grade4)",
+                                                    "isOpen":true,
+                                                    "isDirectory":true,
+                                                    "isAniNode":false,
+                                                    "hasChild":true,
+                                                    "compId":200,
+                                                    "child":[
+                                                        {
+                                                            "type":"Sprite",
+                                                            "props":{},
+                                                            "nodeParent":200,
+                                                            "label":"Sprite",
+                                                            "isOpen":true,
+                                                            "isDirectory":true,
+                                                            "isAniNode":false,
+                                                            "hasChild":true,
+                                                            "compId":201,
+                                                            "child":[
+                                                                {
+                                                                    "type":"Rect",
+                                                                    "props":{"width":15,"lineWidth":1,"height":58,"fillColor":"#a21818"},
+                                                                    "nodeParent":201,
+                                                                    "label":"Rect",
+                                                                    "isDirectory":false,
+                                                                    "isAniNode":false,
+                                                                    "hasChild":false,
+                                                                    "compId":202,
+                                                                    "child":[
+                                                                        ]
+                                                                }],
+                                                            "$HIDDEN":false
+                                                        }]
                                                 }]
                                         },
                                         {

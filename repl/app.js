@@ -39,7 +39,7 @@ class App {
             talentConfig: {
                 // config for talent
                 talentPullCount: 15, // number of talents to pull from the talent pool
-                talentRate: { 1: 100, 2: 10, 3: 2, total: 1000 }, // rate of talent pull
+                talentRate: { 1: 1000, 2: 100, 3: 10, 4: 1, total: 10000 }, // rate of talent pull
                 additions: {
                     TMS: [
                         [10, { 2: 1 }],
@@ -218,9 +218,11 @@ class App {
         grade1: ['\x1B[94m', '\x1B[39m'], // Bright Blue
         grade2: ['\x1B[95m', '\x1B[39m'], // Bright Magenta
         grade3: ['\x1B[93m', '\x1B[39m'], // Bright Yellow
+        grade4: ['\x1B[31m', '\x1B[39m'], // red
         grade1b: ['\x1B[94m\x1B[7m', '\x1B[0m'], // Bright Blue BG
         grade2b: ['\x1B[95m\x1B[7m', '\x1B[0m'], // Bright Magenta BG
         grade3b: ['\x1B[93m\x1B[7m', '\x1B[0m'], // Bright Yellow BG
+        grade4b: ['\x1B[31m\x1B[7m', '\x1B[0m'], // red BG
     }
     #randomTalents
 
@@ -559,9 +561,9 @@ class App {
             const s = this.#randomTalents[number]
             if (!s) return warn(`${number} 为未知天赋`)
             if (this.#talentSelected.has(s)) continue
-            if (this.#talentSelected.size == 3)
+            if (this.#talentSelected.size == 4)
                 return warn(
-                    '你只能选3个天赋。请使用 \x1B[4m/unselect\x1B[24m 取消选择你不想要的天赋'
+                    '你只能选4个天赋。请使用 \x1B[4m/unselect\x1B[24m 取消选择你不想要的天赋'
                 )
 
             const exclusive = this.#life.exclude(
@@ -641,8 +643,8 @@ class App {
             `${a}\n${this.style('warn', this.style('warn', b))}`
         switch (this.#step) {
             case this.Steps.TALENT:
-                if (this.#talentSelected.size != 5)
-                    return warn(this.list(), `请选择 5 个天赋`)
+                if (this.#talentSelected.size != 4)
+                    return warn(this.list(), `请选择 4 个天赋`)
                 this.#step = this.Steps.PROPERTY
                 this.#life.remake(
                     Array.from(this.#talentSelected).map(({ id }) => id)
@@ -796,7 +798,7 @@ class App {
         if (tempLess < 0) return warn('⚠ 你没有更多的点数可以分配了')
         if (tempLess > this.#propertyAllocation.total || tempSet < 0)
             return warn('⚠ 不能分配负数属性')
-        if (tempSet > 10) return warn('⚠ 单项属性最高分配10点')
+        if (tempSet > 15) return warn('⚠ 单项属性最高分配15点')
 
         this.#propertyAllocation[tag] += value
 

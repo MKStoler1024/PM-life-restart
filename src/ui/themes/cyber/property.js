@@ -216,6 +216,7 @@ export default class CyberProperty extends ui.view.CyberTheme.CyberPropertyUI {
         const grade1 = box.getChildByName("grade1");
         const grade2 = box.getChildByName("grade2");
         const grade3 = box.getChildByName("grade3");
+        const grade4 = box.getChildByName("grade4");
         const labDescription = box.getChildByName("labDescription");
 
         labTitle.text = dataSource.name;
@@ -225,21 +226,31 @@ export default class CyberProperty extends ui.view.CyberTheme.CyberPropertyUI {
                 grade1.visible = true;
                 grade2.visible = false;
                 grade3.visible = false;
+                grade4.visible = false;
                 break;
             case 2:
                 grade1.visible = false;
                 grade2.visible = true;
                 grade3.visible = false;
+                grade4.visible = false;
                 break;
             case 3:
                 grade1.visible = false;
                 grade2.visible = false;
                 grade3.visible = true;
+                grade4.visible = false;
+                break;
+            case 4:
+                grade1.visible = false;
+                grade2.visible = false;
+                grade3.visible = false;
+                grade4.visible = true;
                 break;
             default:
                 grade1.visible = false;
                 grade2.visible = false;
                 grade3.visible = false;
+                grade4.visible = false;
                 break;
         }
     }

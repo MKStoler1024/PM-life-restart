@@ -15,7 +15,7 @@ describe('condition', () => {
         n1: 0,
         n2: -10,
         n3: 10,
-        nl1: [1, 2, 3],
+        nl1: [1, 2, 3, 4],
         nl2: [0],
         nl3: [],
     })
@@ -47,6 +47,7 @@ describe('condition', () => {
         expect(check('nl1=1')).toBe(true)
         expect(check('nl1=2')).toBe(true)
         expect(check('nl1=3')).toBe(true)
+        expect(check('nl1=4')).toBe(true)
     })
     test('ne(!=)', () => {
         expect(check('n3!=9')).toBe(true)
@@ -56,22 +57,23 @@ describe('condition', () => {
         expect(check('nl1!=1')).toBe(false)
         expect(check('nl1!=2')).toBe(false)
         expect(check('nl1!=3')).toBe(false)
+        expect(check('nl1!=4')).toBe(false)
     })
     test('in(?)', () => {
-        expect(check('n3?[1,2,3]')).toBe(false)
+        expect(check('n3?[1,2,3,4]')).toBe(false)
         expect(check('n3?[10,11,12]')).toBe(true)
         expect(check('nl1?[0,1]')).toBe(true)
-        expect(check('nl2?[1,2,3]')).toBe(false)
-        expect(check('nl3?[1,2,3]')).toBe(false)
+        expect(check('nl2?[1,2,3,4]')).toBe(false)
+        expect(check('nl3?[1,2,3,4]')).toBe(false)
         expect(check('nl2?[]')).toBe(false)
         expect(check('nl3?[]')).toBe(false)
     })
     test('notin(!)', () => {
-        expect(check('n3![1,2,3]')).toBe(true)
+        expect(check('n3![1,2,3,4]')).toBe(true)
         expect(check('n3![10,11,12]')).toBe(false)
         expect(check('nl1![0,1]')).toBe(false)
-        expect(check('nl2![1,2,3]')).toBe(true)
-        expect(check('nl3![1,2,3]')).toBe(true)
+        expect(check('nl2![1,2,3,4]')).toBe(true)
+        expect(check('nl3![1,2,3,4]')).toBe(true)
         expect(check('nl2![]')).toBe(true)
         expect(check('nl3![]')).toBe(true)
     })

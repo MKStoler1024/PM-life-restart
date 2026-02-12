@@ -292,6 +292,30 @@
                                             "child":[
                                                 ]
                                         }]
+                                },
+                                {
+                                    "type":"Box",
+                                    "props":{"y":0,"x":0,"width":15,"visible":false,"name":"grade4","height":100},
+                                    "nodeParent":15,
+                                    "label":"Box(grade4)",
+                                    "isOpen":false,
+                                    "isDirectory":true,
+                                    "isAniNode":true,
+                                    "hasChild":true,
+                                    "compId":200,
+                                    "child":[
+                                        {
+                                            "type":"Rect",
+                                            "props":{"width":15,"lineWidth":1,"height":100,"fillColor":"#a21818"},
+                                            "nodeParent":200,
+                                            "label":"Rect",
+                                            "isDirectory":false,
+                                            "isAniNode":true,
+                                            "hasChild":false,
+                                            "compId":201,
+                                            "child":[
+                                                ]
+                                        }]
                                 }]
                         },
                         {

@@ -41,7 +41,7 @@ class Talent {
 
     config({
         talentPullCount = 15, // number of talents to pull from the talent pool
-        talentRate = { 1:100, 2:10, 3:2, total: 1000 }, // rate of talent pull
+        talentRate = { 1:1000, 2:100, 3:10, 4:1, total: 10000 }, // rate of talent pull
         additions = {}, // additional additions
     } = {}) {
         this.#talentPullCount = talentPullCount;
@@ -94,7 +94,7 @@ class Talent {
 
     getRate(additionValues = {}) {
         const rate = this.#system.clone(this.#talentRate);
-        const addition = { 1:1, 2:1, 3:1, };
+        const addition = { 1:1, 2:1, 3:1, 4:1, };
 
         Object.keys(additionValues).forEach(key => {
             const addi = this.getAddition(key, additionValues[key])
@@ -113,6 +113,7 @@ class Talent {
 
         const randomGrade = () => {
             let randomNumber = Math.floor(Math.random() * rate.total);
+            if((randomNumber -= rate[4]) < 0) return 4;
             if((randomNumber -= rate[3]) < 0) return 3;
             if((randomNumber -= rate[2]) < 0) return 2;
             if((randomNumber -  rate[1]) < 0) return 1;
