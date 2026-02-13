@@ -95,15 +95,15 @@ export default ({
     UI_AGE_Judge_Level_10: '血魔',
     UI_AGE_Judge_Level_11: '鸿圆的仙人',
 
-    UI_Intelligence_Judge_Level_7: '识海',
-    UI_Intelligence_Judge_Level_8: '元神',
-    UI_Intelligence_Judge_Level_9: '仙魂',
+    UI_Intelligence_Judge_Level_7: '你怎么这么强？',
+    UI_Intelligence_Judge_Level_8: '你怎么这么强？',
+    UI_Intelligence_Judge_Level_9: '你怎么这么强？',
 
-    UI_Strength_Judge_Level_7: '凝气',
-    UI_Strength_Judge_Level_8: '筑基',
-    UI_Strength_Judge_Level_9: '金丹',
-    UI_Strength_Judge_Level_10: '元婴',
-    UI_Strength_Judge_Level_11: '仙体',
+    UI_Strength_Judge_Level_7: '你怎么这么强？',
+    UI_Strength_Judge_Level_8: '你怎么这么强？',
+    UI_Strength_Judge_Level_9: '你怎么这么强？',
+    UI_Strength_Judge_Level_10: '你怎么这么强？',
+    UI_Strength_Judge_Level_11: '你怎么这么强？',
 
     UI_Remake_Times_Judge_Level_0: '抽到紫色概率不变',
     UI_Remake_Times_Judge_Level_1: '抽到紫色概率翻倍',
