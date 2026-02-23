@@ -21,9 +21,9 @@ jobs:
         run: |
           pnpm install
           pnpm xlsx2json
-          pnpm build
+          pnpm build:gh
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: template # The folder the action should deploy.
+          folder: dist # The folder the action should deploy.
