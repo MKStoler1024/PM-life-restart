@@ -19,7 +19,7 @@ export default {
         if (basePath !== '/') {
           result = result.replace(
             /src="(libs\/[^"]+)"/g,
-            `src=".${basePath}$1"`
+            `src="${basePath}$1"`
           );
         }
         
