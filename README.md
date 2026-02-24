@@ -31,6 +31,18 @@ pnpm dev
 ```
 
 After the startup is complete, open a browser and visit [http://localhost:5173](http://localhost:5173).
+
+### Build for Production
+
+```bash
+# Build for local deployment (base path: /)
+pnpm build
+
+# Build for GitHub Pages (base path: /pm-life-restart/)
+pnpm build:gh
+```
+
+The build output will be in the `dist` directory.
 </details>
 
 <details>

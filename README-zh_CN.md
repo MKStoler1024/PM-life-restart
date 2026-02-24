@@ -31,6 +31,18 @@ pnpm dev
 
 启动完成后打开浏览器访问 [http://localhost:5173](http://localhost:5173)。
 
+### 生产编译
+
+```bash
+# 本地部署（资源路径：/）
+pnpm build
+
+# GitHub Pages部署（资源路径：/pm-life-restart/）
+pnpm build:gh
+```
+
+编译输出目录为 `dist`。
+
 </details>
 
 <details>

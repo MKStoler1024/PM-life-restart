@@ -8,6 +8,7 @@
         "xlsx2json": "vt transform -d public \"data/**/*.xlsx\"",
         "dev": "vite",
         "build": "vite build",
+        "build:gh": "VITE_BASE_PATH=/PM-life-restart/ vite build",
         "start": "vite preview",
         "test": "vitest"
     },
