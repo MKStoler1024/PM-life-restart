@@ -39,7 +39,7 @@ class App {
             talentConfig: {
                 // config for talent
                 talentPullCount: 15, // number of talents to pull from the talent pool
-                talentRate: { 1: 1000, 2: 100, 3: 10, 4: 1, total: 10000 }, // rate of talent pull
+                talentRate: { 1: 1000, 2: 100, 3: 50, 4: 1, total: 10000 }, // rate of talent pull
                 additions: {
                     TMS: [
                         [10, { 2: 1 }],
