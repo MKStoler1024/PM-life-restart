@@ -22,6 +22,7 @@ jobs:
           pnpm install
           pnpm xlsx2json
           pnpm build:gh
+          ls -la dist
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
