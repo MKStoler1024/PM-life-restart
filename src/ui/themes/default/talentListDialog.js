@@ -74,7 +74,7 @@ export default class TalentListDialog extends Laya.Dialog {
             const data = list.array[index];
             const nameLab = cell.getChildByName('nameLabel');
             const descLab = cell.getChildByName('descLabel');
-            nameLab.text = `[${data.id}] ${data.name} ${data.exclusive ? '(隐藏)' : ''}`;
+            nameLab.text = `[${data.id}] ${data.name} ${data.exclusive ? '(名人专属)' : ''}`;
             descLab.text = data.description;
             
             const colors = ['#ffffff', '#55fffe', '#b17cff', '#ffce45', '#ff4d4d', '#feea1b'];
